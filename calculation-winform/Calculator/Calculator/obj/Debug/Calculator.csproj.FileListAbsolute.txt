@@ -1,0 +1,11 @@
+E:\workspace\testing-learning\calculation-winform\Calculator\Calculator\bin\Debug\Calculator.exe.config
+E:\workspace\testing-learning\calculation-winform\Calculator\Calculator\bin\Debug\Calculator.exe
+E:\workspace\testing-learning\calculation-winform\Calculator\Calculator\bin\Debug\Calculator.pdb
+E:\workspace\testing-learning\calculation-winform\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+E:\workspace\testing-learning\calculation-winform\Calculator\Calculator\obj\Debug\Calculator.frm_calculator.resources
+E:\workspace\testing-learning\calculation-winform\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+E:\workspace\testing-learning\calculation-winform\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+E:\workspace\testing-learning\calculation-winform\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+E:\workspace\testing-learning\calculation-winform\Calculator\Calculator\obj\Debug\Calculator.exe
+E:\workspace\testing-learning\calculation-winform\Calculator\Calculator\obj\Debug\Calculator.pdb
+E:\workspace\testing-learning\calculation-winform\Calculator\Calculator\obj\Debug\Calculator.exe.config
