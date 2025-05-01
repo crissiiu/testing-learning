@@ -1,0 +1,35 @@
+
+
+
+--Cách tìm vị trí (Locators) trong Selenium WebDriver (XPath, CSS Selectors, ID, ...)----------------------
+ID: driver.findElement(By.id("username")); //Nhanh chính xác, phụ thuộc vào ID duy nhất
+XPath: //Mạnh, linh hoạt, Dễ bị lỗi nếu DOM thay đổi
+- Absolute XPath:  driver.findElement(By.xpath("/html/body/div/form/input"));
+- Relative XPath:
+	driver.findElement(By.xpath("//input[@id='username']"));
+	driver.findElement(By.xpath("//button[text()='Submit']"));
+CSS Selectors: Nhanh, hỗ trợ tốt nested DOM, không hỗ trợ text() như XPath
+	driver.findElement(By.cssSelector("#username")); // ID
+	driver.findElement(By.cssSelector(".form-control")); // Class
+	driver.findElement(By.cssSelector("input[name='email']")); // Attribute
+	driver.findElement(By.cssSelector("div > input[type='text']")); // Nested
+Class name: driver.findElement(By.className("form-control")); //Nhanh dễ đọc, có thể trùng nhiều phần tử
+Name: driver.findElement(By.name("email")); //Dễ dùng nếu có form name, có thể trùng giữa nhiều element
+
+
+
+
+
+---------------------------------------
+Course 1: Cấu hình Selenium với C#, bạn có thể làm theo các bước sau:
+1. Tải và cài đặt VS, môi trường phát triển tích hợp IDE cho ngôn ngữ lập trình C#
+2. Tạo dự án mới:
+- File -> New -> Project
+- Trong cửa sổ New Project chọn mẫu dự án Console App (.Net Framerwork) hoặc Console App (.Net core)
+3. Thêm thư viện Selenium vào dự án:
+	Sử dụng Nuget: Trong VS, nhấp chuột vào dự án và chọn Manage Nuget Packages
+	Trong cửa sổ Nuget Package Manager. tìm "Selenium.WebDriver" và "Selenium.WebDriver.ChromeDriver" hoặc các gói tương ứng khác tuỳ thuộc vào trình duyệt
+	Hoặc thêm thư viện thủ công: Tải các tệp DDL của Selenium từ web chính thức. và điều hướng đến các tệp DDL đã tải xuống và thêm chúng vào dự án.
+4.Import các lớp Selenium vào mã C#: 
+	using OpenQA.Selenium;
+5. Viết mã
