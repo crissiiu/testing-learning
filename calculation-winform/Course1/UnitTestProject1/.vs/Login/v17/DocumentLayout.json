@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "E:\\workspace\\testing-learning\\calculation-winform\\Course1\\UnitTestProject1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36A1AAAF-97E8-4C9E-8F8E-268CC015A243}|UnitTestProject1\\Login.csproj|e:\\workspace\\testing-learning\\calculation-winform\\course1\\unittestproject1\\unittestproject1\\testscenario\\cookie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36A1AAAF-97E8-4C9E-8F8E-268CC015A243}|UnitTestProject1\\Login.csproj|solutionrelative:unittestproject1\\testscenario\\cookie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36A1AAAF-97E8-4C9E-8F8E-268CC015A243}|UnitTestProject1\\Login.csproj|e:\\workspace\\testing-learning\\calculation-winform\\course1\\unittestproject1\\unittestproject1\\testscenario\\facebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A1AAAF-97E8-4C9E-8F8E-268CC015A243}|UnitTestProject1\\Login.csproj|solutionrelative:unittestproject1\\testscenario\\facebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A1AAAF-97E8-4C9E-8F8E-268CC015A243}|UnitTestProject1\\Login.csproj|e:\\workspace\\testing-learning\\calculation-winform\\course1\\unittestproject1\\unittestproject1\\testscenario\\paralleltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A1AAAF-97E8-4C9E-8F8E-268CC015A243}|UnitTestProject1\\Login.csproj|solutionrelative:unittestproject1\\testscenario\\paralleltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Cookie.cs",
-              "DocumentMoniker": "E:\\workspace\\testing-learning\\calculation-winform\\Course1\\UnitTestProject1\\UnitTestProject1\\TestScenario\\Cookie.cs",
-              "RelativeDocumentMoniker": "UnitTestProject1\\TestScenario\\Cookie.cs",
-              "ToolTip": "E:\\workspace\\testing-learning\\calculation-winform\\Course1\\UnitTestProject1\\UnitTestProject1\\TestScenario\\Cookie.cs",
-              "RelativeToolTip": "UnitTestProject1\\TestScenario\\Cookie.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAxwCEAAAA6AAAAAAAAAA==",
+              "Title": "Facebook.cs",
+              "DocumentMoniker": "E:\\workspace\\testing-learning\\calculation-winform\\Course1\\UnitTestProject1\\UnitTestProject1\\TestScenario\\Facebook.cs",
+              "RelativeDocumentMoniker": "UnitTestProject1\\TestScenario\\Facebook.cs",
+              "ToolTip": "E:\\workspace\\testing-learning\\calculation-winform\\Course1\\UnitTestProject1\\UnitTestProject1\\TestScenario\\Facebook.cs",
+              "RelativeToolTip": "UnitTestProject1\\TestScenario\\Facebook.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAQwJAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T09:22:51.089Z",
+              "WhenOpened": "2025-05-02T07:51:52.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ParallelTest.cs",
+              "DocumentMoniker": "E:\\workspace\\testing-learning\\calculation-winform\\Course1\\UnitTestProject1\\UnitTestProject1\\TestScenario\\ParallelTest.cs",
+              "RelativeDocumentMoniker": "UnitTestProject1\\TestScenario\\ParallelTest.cs",
+              "ToolTip": "E:\\workspace\\testing-learning\\calculation-winform\\Course1\\UnitTestProject1\\UnitTestProject1\\TestScenario\\ParallelTest.cs",
+              "RelativeToolTip": "UnitTestProject1\\TestScenario\\ParallelTest.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T07:48:44.819Z",
               "EditorCaption": ""
             }
           ]

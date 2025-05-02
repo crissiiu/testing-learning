@@ -1,4 +1,7 @@
-﻿using OpenQA.Selenium;
+﻿using AventStack.ExtentReports;
+using AventStack.ExtentReports.Reporter;
+using log4net.Config;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
@@ -10,6 +13,8 @@ namespace Login.TestScenario
 {
     internal class Facebook
     {
+        private static ExtentReports extent;
+
         static void Main()
         {
             IWebDriver driver =new ChromeDriver();
@@ -126,6 +131,11 @@ namespace Login.TestScenario
             }
 
 
+            //---------// Bao cao va ghi log kiem thu nang cao //---------//
+            XmlConfigurator.Configure();
+            extent = new ExtentReports();
+            var htmlReporter = new ExtentHtmlReporter(@"D:\report.html");
+            //Khoi
             //close browser
             driver.Quit();
 
