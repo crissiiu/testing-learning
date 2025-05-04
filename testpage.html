@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test Page</h1>
+
+  <!-- Text Input -->
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" />
+
+  <!-- Button -->
+  <div style="margin-top: 10px;">
+    <button type="button" onclick="alert('Button clicked!')">Submit</button>
+  </div>
+
+  <!-- Dropdown -->
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="vn">Vietnam</option>
+    <option value="us">United States</option>
+    <option value="jp">Japan</option>
+  </select>
+
+  <!-- Multi-select -->
+  <label for="skills">Skills (Hold Ctrl or Cmd to select multiple):</label>
+  <select id="skills" name="skills" multiple size="4">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">JavaScript</option>
+    <option value="ts">TypeScript</option>
+  </select>
+
+  <!-- Radio buttons for Sex -->
+  <fieldset style="margin-top: 10px;">
+    <legend>Sex:</legend>
+    <input type="radio" id="male" name="sex" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="sex" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="sex" value="other">
+    <label for="other">Other</label>
+  </fieldset>
+
+  <!-- Three Checkboxes -->
+  <fieldset style="margin-top: 10px;">
+    <legend>Interests:</legend>
+    <input type="checkbox" id="sports" name="interest" value="sports">
+    <label for="sports">Sports</label><br>
+    <input type="checkbox" id="music" name="interest" value="music">
+    <label for="music">Music</label><br>
+    <input type="checkbox" id="travel" name="interest" value="travel">
+    <label for="travel">Travel</label>
+  </fieldset>
+
+</body>
+</html>
