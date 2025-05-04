@@ -1,6 +1,5 @@
 using DotnetSelenium.Pages;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Chrome; 
 
 namespace DotnetSelenium
 {
@@ -21,7 +20,7 @@ namespace DotnetSelenium
             loginPage.Login("admin", "password");
         }
 
-        
+
         ///* http://eaapp.somee.com/ */
         //[Test]
         //public void Test1()

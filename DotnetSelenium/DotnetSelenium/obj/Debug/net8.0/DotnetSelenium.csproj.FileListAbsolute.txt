@@ -103,3 +103,4 @@ E:\workspace\testing-learning\DotnetSelenium\DotnetSelenium\obj\Debug\net8.0\Dot
 E:\workspace\testing-learning\DotnetSelenium\DotnetSelenium\obj\Debug\net8.0\DotnetSelenium.genruntimeconfig.cache
 E:\workspace\testing-learning\DotnetSelenium\DotnetSelenium\obj\Debug\net8.0\ref\DotnetSelenium.dll
 E:\workspace\testing-learning\DotnetSelenium\DotnetSelenium\bin\Debug\net8.0\WebDriver.Support.dll
+E:\workspace\testing-learning\DotnetSelenium\DotnetSelenium\bin\Debug\net8.0\login.json

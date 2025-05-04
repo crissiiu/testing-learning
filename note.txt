@@ -1,9 +1,12 @@
+--Prompt
+Create page object model code in Selenium with C# for these locator and set the class name as <ClassName> "<code>"
 
+Can you update the above code to get the input details á parameter for the method <ClassName>
 
 
 --Cách tìm vị trí (Locators) trong Selenium WebDriver (XPath, CSS Selectors, ID, ...)----------------------
 ID: driver.findElement(By.id("username")); //Nhanh chính xác, phụ thuộc vào ID duy nhất
-XPath: //Mạnh, linh hoạt, Dễ bị lỗi nếu DOM thay đổi
+XPath: //Mạnh, linh hoạt, Dễ bị lỗi nếu DOM thay đổi || //*[@id="abc"]
 - Absolute XPath:  driver.findElement(By.xpath("/html/body/div/form/input"));
 - Relative XPath:
 	driver.findElement(By.xpath("//input[@id='username']"));
