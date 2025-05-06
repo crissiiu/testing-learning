@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeLearning")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51d412d51ae2398b8d964ae9d2b45f7df643564a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+229e13cd9c62ebf21482b21c8e0f65c68b4a445d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeLearning")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeLearning")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

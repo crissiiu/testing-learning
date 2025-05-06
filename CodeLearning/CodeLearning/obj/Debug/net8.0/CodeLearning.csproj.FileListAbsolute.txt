@@ -1,0 +1,15 @@
+E:\workspace\testing-learning\CodeLearning\CodeLearning\bin\Debug\net8.0\CodeLearning.exe
+E:\workspace\testing-learning\CodeLearning\CodeLearning\bin\Debug\net8.0\CodeLearning.deps.json
+E:\workspace\testing-learning\CodeLearning\CodeLearning\bin\Debug\net8.0\CodeLearning.runtimeconfig.json
+E:\workspace\testing-learning\CodeLearning\CodeLearning\bin\Debug\net8.0\CodeLearning.dll
+E:\workspace\testing-learning\CodeLearning\CodeLearning\bin\Debug\net8.0\CodeLearning.pdb
+E:\workspace\testing-learning\CodeLearning\CodeLearning\obj\Debug\net8.0\CodeLearning.GeneratedMSBuildEditorConfig.editorconfig
+E:\workspace\testing-learning\CodeLearning\CodeLearning\obj\Debug\net8.0\CodeLearning.AssemblyInfoInputs.cache
+E:\workspace\testing-learning\CodeLearning\CodeLearning\obj\Debug\net8.0\CodeLearning.AssemblyInfo.cs
+E:\workspace\testing-learning\CodeLearning\CodeLearning\obj\Debug\net8.0\CodeLearning.csproj.CoreCompileInputs.cache
+E:\workspace\testing-learning\CodeLearning\CodeLearning\obj\Debug\net8.0\CodeLearning.sourcelink.json
+E:\workspace\testing-learning\CodeLearning\CodeLearning\obj\Debug\net8.0\CodeLearning.dll
+E:\workspace\testing-learning\CodeLearning\CodeLearning\obj\Debug\net8.0\refint\CodeLearning.dll
+E:\workspace\testing-learning\CodeLearning\CodeLearning\obj\Debug\net8.0\CodeLearning.pdb
+E:\workspace\testing-learning\CodeLearning\CodeLearning\obj\Debug\net8.0\CodeLearning.genruntimeconfig.cache
+E:\workspace\testing-learning\CodeLearning\CodeLearning\obj\Debug\net8.0\ref\CodeLearning.dll
