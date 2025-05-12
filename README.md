@@ -163,3 +163,111 @@ Chúng ta biết Selenium có hai cơ chế chờ cho một phần tử:
 1. Chờ ngầm định (Implicit Wait)
 2. Chờ tường minh (Explicit Wait)
 3. Chờ linh hoạt (Fluent Wait)
+
+
+✅ 1. Xác định vùng highlight bằng annotation type Highlight
+csharp
+Copy
+Edit
+using iText.Kernel.Pdf;
+using iText.Kernel.Pdf.Annot;
+using iText.Kernel.Pdf.Canvas.Parser;
+using iText.Kernel.Geom;
+
+[Fact]
+public void Pdf_ShouldCheckText_ExceptHighlightedParts()
+{
+    var path = "output/report.pdf";
+    var textToSkip = new List<Rectangle>();
+
+    using var reader = new PdfReader(path);
+    using var pdfDoc = new PdfDocument(reader);
+
+    // 1. Lấy vùng highlight từ tất cả các trang
+    for (int i = 1; i <= pdfDoc.GetNumberOfPages(); i++)
+    {
+        var page = pdfDoc.GetPage(i);
+        var annots = page.GetAnnotations();
+
+        foreach (var annot in annots)
+        {
+            if (annot.GetSubtype().Equals(PdfName.Highlight))
+            {
+                var rect = annot.GetRectangle().ToRectangle();
+                textToSkip.Add(rect);
+            }
+        }
+    }
+
+    // 2. Đọc toàn bộ text, nhưng bỏ qua các text nằm trong vùng highlight
+    var remainingText = "";
+
+    for (int i = 1; i <= pdfDoc.GetNumberOfPages(); i++)
+    {
+        var page = pdfDoc.GetPage(i);
+        var strategy = new ExcludeHighlightedTextExtractionStrategy(textToSkip);
+        var pageText = PdfTextExtractor.GetTextFromPage(page, strategy);
+
+        remainingText += pageText + "\n";
+    }
+
+    // 3. Kiểm tra nội dung còn lại (đã loại bỏ phần highlight)
+    Assert.Contains("Tổng doanh thu: 120,000,000 VND", remainingText);
+    Assert.DoesNotContain("CHỈ DÙNG CHO KIỂM TRA", remainingText); // ví dụ đoạn được highlight
+}
+🧠 2. Tùy chỉnh chiến lược đọc text để bỏ qua vùng highlight
+csharp
+Copy
+Edit
+using iText.Kernel.Pdf.Canvas.Parser.Listener;
+using iText.Kernel.Pdf.Canvas.Parser.Data;
+using iText.Kernel.Geom;
+
+public class ExcludeHighlightedTextExtractionStrategy : IEventListener
+{
+    private readonly List<Rectangle> excludedZones;
+    private readonly StringBuilder builder = new();
+
+    public ExcludeHighlightedTextExtractionStrategy(List<Rectangle> zones)
+    {
+        excludedZones = zones;
+    }
+
+    public void EventOccurred(IEventData data, EventType type)
+    {
+        if (type != EventType.RENDER_TEXT) return;
+
+        var textData = (TextRenderInfo)data;
+        var textRect = textData.GetBaseline().GetBoundingRectangle();
+
+        bool isInHighlight = excludedZones.Any(zone => zone.Overlaps(textRect));
+        if (!isInHighlight)
+        {
+            builder.Append(textData.GetText());
+        }
+    }
+
+    public ICollection<EventType> GetSupportedEvents() =>
+        new[] { EventType.RENDER_TEXT };
+
+    public override string ToString() => builder.ToString();
+}
+✅ Kết quả bạn đạt được
+🟩 Toàn bộ nội dung sẽ được kiểm tra
+
+🟨 Những đoạn có highlight (annotation kiểu "Highlight") sẽ bị bỏ qua
+
+🧪 Đảm bảo độ chính xác cao hơn, kể cả khi PDF có vùng test động (ví dụ: thời gian, hash, hoặc comment kiểm thử)
+
+📚 Nguồn tài liệu hướng dẫn
+Stack Overflow: "Remove highlighted area in PDF using iTextSharp"
+Bài viết này hướng dẫn cách xác định và xử lý các vùng được highlight trong PDF bằng cách sử dụng thông tin từ các annotation.
+
+Stack Overflow: "Highlight specific word in a PDF document using iText7"
+Bài viết này cung cấp ví dụ về cách tìm kiếm và highlight một từ cụ thể trong tài liệu PDF bằng iText 7.
+
+Code Maze: "Create a PDF With iText in C#/.NET"
+Hướng dẫn chi tiết về cách tạo và thao tác với tài liệu PDF bằng iText 7 trong C#, bao gồm cách cài đặt thư viện và viết mã để tạo PDF.
+
+GitHub: "vniclos/itext7-C-Sharp-test-01"
+Dự án mẫu trên GitHub minh họa cách sử dụng iText 7 trong C# để tạo và kiểm thử tài liệu PDF.
